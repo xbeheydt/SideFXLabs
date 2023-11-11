@@ -390,7 +390,7 @@ unique_id = node.parent().parm(\"proj\").eval()
 cache = os.path.join(node.parent().parm(\"cache_dir\").eval(), unique_id)
 
 if os.name == 'nt':
-        cache = cache.replace(\"/\",\"\\\\\\\\\")
+    cache = cache.replace(\"/\",\"\\\\\\\\\")
  
 img_dir = os.path.join(cache, \"00_Img\")
 
